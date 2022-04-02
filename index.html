@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- jQuery -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                $('.faq_question').click(function() {
+
+                    if ($(this).parent().is('.open')) {
+                        $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                        $(this).closest('.faq').removeClass('open');
+                    } else {
+                        $('.faq_answer_container').slideUp();
+                        $('.faq').removeClass('open');
+                        $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                        $(this).closest('.faq').addClass('open');
+                    }
+
+                });
+            });
+        </script>
+        <title>Rugged Nation</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="homeLogo">
+                    <a href="#"> <img src="media/rug3.jpg" alt="Home logo"></a>
+                </div> 
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#team">The team</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#welcome">Our story</a></li>
+                </ul>
+                <div id="socialMedia">
+                    <div class="imagesSolcialMediaTwitter">
+                        <a href="https://twitter.com/" target="_blank"> <img src="media/Twitter_logo.jpg" alt="Twitter"></a>
+                    </div>
+                    <div class="imagesSolcialMediaInstagram"> 
+                        <a href="https://www.instagram.com/" target="_blank"> <img src="media/Instagram_logo.png" alt="Instagram"></a>
+                    </div>
+                    <div class="imagesSolcialMediaLinkedin">
+                        <a href="https://www.linkedin.com/" target="_blank"> <img src="media/LinkedIn_logo.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </nav>  
+            <div class="banner">
+                <img src="media/banner3.jpg" alt="banner">
+                <h1>From the ashes we rise</h1>
+                <div class="discord">
+                    <a href="https://discord.gg/uGpf4vqq"><img src="media/discord.png" alt="Discord"></a>
+                </div>
+            </div>
+        </header>
+        <section id="welcome">
+            <div class="welcome">
+                <img src="media/welcome4.png" alt="welcome">
+                <div class="welcome_text"> Rugged Nation is a project that will give Rugged NFT projects a new home. We are giving back a self governing community where ideas and voting decide on the future road map and utilities of Rugged Nation.</div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <div class="phase1">
+                <img src="media/phase1.png" alt="Phase1">
+                <div class="phase1_text">
+                    <li>Project logo</li>
+                    <li>Web landing page (Wallet connection, blog, web design, etc...)</li>
+                    <li>Dev work on vault</li>
+                    <li>Dev work on mint process</li>
+                    <li>Utility (Token, pfp generator, community based, more to come...</li>
+                    <li>Staking (in development)</li>
+                    <li>Project intro video (in development)</li>
+                    <li>Email</li>
+                    <li>Twitter page</li>
+                    <li>Instagram page</li>
+                    <li>Discord setp-up</li>
+                    <li>Growing our community</li>
+                </div>
+            </div>
+            <div class="phase2">
+                <img src="media/phase2.png" alt="Phase2">
+                <div class="phase2_text">
+                    <li>Morph a Ruuged Project into a Rugged Nation NFT</li>
+                    <li>Community votes for Top collections to be included</li>
+                    <li>Top 5/10 collections will be selected</li>
+                    <li>Users will be bring NFT from selected rug collection and lock it within our vault</li>
+                    <li>Our vault then produces a replacement nft</li>
+                </div>
+            </div>
+            <div class="phase3">
+                <img src="media/phase3.png" alt="Phase3">
+                <div class="phase3_text">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li> 
+                </div>
+            </div>
+            <div class="phase4">
+                <img src="media/phase4.png" alt="Phase4">
+                <div class="phase4_text">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </div>
+            </div>
+            <div class="phase5">
+                <img src="media/phase5.png" alt="Phase5">
+                <div class="phase5_text">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>The team</h2>
+            <div class="team">
+                <div class="member1">
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member1Text">Xinusu</div>
+                </div>
+                <div class="member2"> 
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member2Text">Morpheus</div>
+                </div>
+                <div class="member3">
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member3Text">Th30xx</div>
+                </div>
+                <div class="member4">
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member4Text">Rug_013</div>
+                </div>
+                <div class="member5">
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member5Text">Quick</div>
+                </div>
+                <div class="member6">
+                    <img src="media/rug2.jpg" alt="">
+                    <div class="member6Text">Rem</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq_container">
+                <div class="faq">
+                    <div class="faq_question open">Question 1</div>
+                    <div class="faq_answer_container" style="display: block;">
+                        <div class="faq_answer">Answer 1</div>
+                    </div>
+                </div>
+        
+                <div class="faq">
+                    <div class="faq_question">Question 2</div>
+                    <div class="faq_answer_container">
+                        <div class="faq_answer">Answer 2</div>
+                    </div>
+                </div>
+        
+                <div class="faq">
+                    <div class="faq_question">Question 3</div>
+                    <div class="faq_answer_container">
+                        <div class="faq_answer">Answer 3</div>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq_question">Question 4</div>
+                    <div class="faq_answer_container">
+                        <div class="faq_answer">Answer 4</div>
+                    </div>
+                </div>
+        
+                <div class="faq">
+                    <div class="faq_question">Question 5</div>
+                    <div class="faq_answer_container">
+                        <div class="faq_answer">Answer 5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div id="copyrightAndIcon">
+              <div id="copyright">
+                  <span>© Rugged Nation - 2022</span>
+              </div>
+              <div id="icons">
+                <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+              </div>
+          </div> 
+        </footer>
+    </body>
+</html>
